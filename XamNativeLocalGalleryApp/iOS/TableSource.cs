@@ -15,6 +15,10 @@ namespace XamNativeLocalGalleryApp.iOS
             galleryItems = new List<GalleryItem>();
         }
 
+        public TableSource()
+        {
+        }
+
         public override nint NumberOfSections(UITableView tableView)
         {
             return 1;
@@ -29,5 +33,7 @@ namespace XamNativeLocalGalleryApp.iOS
         {
             return galleryItems.Count;
         }
+
+        
     }
 }
